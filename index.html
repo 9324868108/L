@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid Flaw Detection System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="creator">Created by Lucky</div>
+    </div>
+
+    <section class="hero">
+        <h1>Hybrid Flaw Detection System</h1>
+        <p>Combining Optical Fiber & Ultrasonic Technologies</p>
+        
+        <div class="model-container">
+            <div class="sensor-ray" id="mainRay"></div>
+            <div id="pulseContainer"></div>
+            <div class="model-visual" id="modelVisual"></div>
+        </div>
+        
+        <div class="control-panel">
+            <button onclick="startDetection('ultrasonic')">Ultrasonic Scan</button>
+            <button onclick="startDetection('optical')">Optical Scan</button>
+            <button onclick="startDetection('hybrid')">Hybrid Scan</button>
+        </div>
+        
+        <div class="results" id="results"></div>
+    </section>
+
+    <section class="info-section">
+        <div class="card">
+            <h2>Project Overview</h2>
+            <p>This hybrid system combines optical fiber sensing with ultrasonic testing to detect material flaws with unprecedented accuracy. The system uses:</p>
+            <ul>
+                <li>Fiber Bragg Grating (FBG) sensors</li>
+                <li>Ultrasonic pulse-echo technique</li>
+                <li>Multi-spectral analysis</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Working Principle</h2>
+            <p>The system operates in 3 phases:</p>
+            <ol>
+                <li>Ultrasonic pulse generation (5-10 MHz)</li>
+                <li>Optical phase detection (1550nm wavelength)</li>
+                <li>Data fusion and analysis</li>
+            </ol>
+        </div>
+
+        <div class="card">
+            <h2>Technical Specifications</h2>
+            <table>
+                <tr><th>Parameter</th><th>Optical</th><th>Ultrasonic</th></tr>
+                <tr><td>Resolution</td><td>±0.1μm</td><td>±0.5mm</td></tr>
+                <tr><td>Range</td><td>100m</td><td>5m</td></tr>
+                <tr><td>Frequency</td><td>193THz</td><td>5MHz</td></tr>
+            </table>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
